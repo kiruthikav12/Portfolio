@@ -1,0 +1,361 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; 
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 0; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1 1em;
+}
+
+header .logo img {
+    height: 60px; 
+    width: 150px; 
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 0.5em; 
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em; 
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2em;
+    background-color: #fff;
+    margin: 2em 0 1em;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+#home .home-image {
+    margin-top: 1em;
+}
+
+#home .home-image img {
+    width: 250px; 
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#about {
+    background-color: #e0e0e0; 
+    color: #333;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+
+#about .about-container {
+    background-color: #fff; 
+    padding: 2em;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    max-width: 1200px; 
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    gap: 2em; 
+}
+
+#about .about-gif {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-gif img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about .about-text {
+    flex: 2;
+    text-align: left; 
+}
+
+#about h2 {
+    background-color: #555; 
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333; 
+}
+
+#projects {
+    background-color: #e0e0e0; 
+    color: #333; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#projects h2 {
+    background-color: #555; 
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.project-card h3 {
+    margin: 0.5em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.project-card p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #333;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#resume {
+    background-color: #e0e0e0; 
+    color: #333; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#resume h4 {
+    background-color: #555; 
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+#resume .resume-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; 
+    padding: 2em;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    max-width: 1200px; 
+    width: 100%;
+    height: 70vh; 
+    box-sizing: border-box;
+    margin-top: -50px; 
+}
+
+#resume .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1; 
+    margin-right: 2em; 
+}
+
+#resume .resume-link {
+    background-color: #555; 
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+#resume .resume-link:hover {
+    background-color: #666;
+}
+
+#resume .resume-gif {
+    width: 600px;
+    height: 400px;
+}
+
+#resume .resume-gif img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#contact {
+    background-color: #e0e0e0; 
+    color: #333; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 2em;
+}
+
+#contact h4 {
+    background-color: #555;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+#contact .contact-container {
+    background-color: #fff; 
+    padding: 2em;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    max-width: 1200px; 
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    gap: 2em; 
+}
+
+.contact-details {
+    flex: 1;
+    text-align: left; 
+}
+
+.contact-gif {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-gif img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333; 
+}
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
