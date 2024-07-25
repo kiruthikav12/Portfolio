@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -22,7 +23,7 @@ header .container {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1 1em;
+    padding: 0 1em; /* Corrected padding value */
 }
 
 header .logo img {
@@ -358,4 +359,204 @@ section {
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    header .container {
+        padding: 0 0.5em; /* Adjust for smaller screens */
+    }
+    
+    #home h1 {
+        font-size: 2.5em;
+    }
+
+    #home p {
+        font-size: 1.2em;
+    }
+
+    #home .home-image img {
+        width: 200px; 
+        height: 200px;
+    }
+    
+    #about .about-container {
+        flex-direction: column;
+    }
+
+    #about .about-text {
+        text-align: center;
+    }
+
+    #resume .resume-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #resume .resume-content {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    #resume .resume-gif {
+        width: 100%;
+        height: auto;
+    }
+
+    #projects .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects .project-card {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    #contact .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contact .contact-details {
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 1em;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin-top: 1em;
+    }
+
+    header nav ul li {
+        margin: 0.5em 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    main {
+        margin-left: 0;
+        padding-top: 70px; /* Adjust for fixed header */
+    }
+
+    section {
+        margin: 1em 0;
+    }
+
+    #home h1 {
+        font-size: 2em;
+    }
+
+    #home p {
+        font-size: 1em;
+    }
+
+    #home .home-image img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    #about .about-container {
+        flex-direction: column;
+    }
+
+    #about .about-text {
+        text-align: center;
+    }
+
+    #resume .resume-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #resume .resume-content {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    #resume .resume-gif {
+        width: 100%;
+        height: auto;
+    }
+
+    #projects .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects .project-card {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    #contact .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contact .contact-details {
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 50px; 
+        width: 120px; 
+    }
+
+    header nav ul li a {
+        font-size: 0.8em; 
+    }
+
+    #home h1 {
+        font-size: 1.5em;
+    }
+
+    #home p {
+        font-size: 0.9em;
+    }
+
+    #home .home-image img {
+        width: 120px; 
+        height: 120px;
+    }
+
+    #about h2, #projects h2, #resume h4, #contact h4 {
+        font-size: 1.5em;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
 }
