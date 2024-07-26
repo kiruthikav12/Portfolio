@@ -1,4 +1,4 @@
-/* Base styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,7 +23,7 @@ header .container {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1em; /* Corrected padding value */
+    padding: 0 1em; 
 }
 
 header .logo img {
@@ -361,10 +361,9 @@ section {
     text-decoration: underline;
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
     header .container {
-        padding: 0 0.5em; /* Adjust for smaller screens */
+        padding: 0 0.5em; 
     }
     
     #home h1 {
@@ -466,7 +465,7 @@ section {
 
     main {
         margin-left: 0;
-        padding-top: 70px; /* Adjust for fixed header */
+        padding-top: 70px; 
     }
 
     section {
